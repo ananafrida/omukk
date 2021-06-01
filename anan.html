@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+     margin: 10px 0px 0px 0px;
+     font-family: Arial, sans-serif;
+}
+
+/* Create two equal columns that floats next to each other */
+.columnim {
+margin:0px 0px 0px 50px;
+  text-align:left;
+  float: left;
+  width: 25%;
+  padding: 30px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.rowim:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footcolsp{
+float:left;
+column-width:250px;
+padding:50px;
+}
+
+.footcol{
+float:left;
+column-width:250px;
+padding:50px;
+}
+
+.midcol{
+     float: left;
+    column-width: 500px;
+    padding: 50px;
+}
+.headcol{
+     float: left;
+    column-width: 120px;
+    padding: 5px;
+}
+
+.header {
+  margin: 0px 0px 0px 0px;
+  padding: 20px;
+  #text-align:vertical;
+  background: #000000;
+  color: white;
+  font-size: 15px;
+}
+
+/*for middle rowcol*/
+.midcontent {
+  #margin: 0px 0px 0px 0px;
+  left:6px;
+  position: absolute;
+  top:150px;
+  bottom: 0 px;
+  #background: rgb(128, 0, 0); /* Fallback color */
+  #background: rgba(128, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: Black;
+  width: 40%;
+  padding: 6px;
+}
+
+/*for transparent part*/
+.content {
+<br><br><br>
+  position: absolute;
+  bottom: 0 px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  #background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+ <body  background = "marketing.jpg">
+<div class="header">
+<div class="row">
+<div class="column" style="margin: 0px 370px 0px 0px">
+<img src="meta2.jpg">
+</div>
+
+<div class="headcol" >
+<h4><button class="button">AAAAA</button><h4>
+</div>
+<div class="headcol">
+<h4><button class="button">AAAAA</button><h4>
+</div>
+<div class="headcol" >
+<h4><button class="button">AAAAA</button><h4>
+</div>
+<div class="headcol">
+<h4><button class="button">AAAAA</button><h4>
+</div>
+<div class="headcol">
+<h4><button class="button">AAAAA</button><h4>
+</div>
+<div class="headcol">
+<h4><button class="button">AAAAA</button><h4>
+</div>
+</div>
+</div>
+<br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<div class="midcontent">
+<div class="row">
+<div class= "midcol">
+<h1 style = "font-size:40px">Ensuring Quality</h1>
+<p style = "font-size:25px">Omukk is a Bangladesh-based technology solution team dedicated to help startups and businesses to grow their impacts. Besides contact-based works Omukk has its own projects that are constantly tested and upgraded for better uses.</p>
+</div>
+</div>
+</div>
+
+<div class="rowim" style="color:white;">
+<div class="columnim" style="background:rgb(0, 0, 0); background:rgba(0, 0, 0, 0.5); postition:absolute;">
+    <h2>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Design</h2>
+    <p style = "font-size:20px">A responsive design is essential for a SEO friendly website. We make user-friendly designs while maintaining the fancy look of your site. Our team takes care of every aspect of website designing from UI/UX design to content writing.</p>
+</div>
+    <div class="columnim" style="background:rgb(0, 0, 0); background:rgba(0, 0, 0, 0.5); postition:absolute;">
+    <h2>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Development</h2>
+   <p style = "font-size:20px">Web applications can revolutionize your customer services. It combines the personalized experience of using an app and accessing it on a web browser from any device. Our team provides end to end website development services.</p>
+  </div>
+  <div class="columnim" style="background:rgb(0, 0, 0); background:rgba(0, 0, 0, 0.5); postition:absolute;">
+    <h2>&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Digital Marketing</h2>
+    <p style = "font-size:20px">Effective marketing helps you to boost your sales and engage with your customers. Our team provides marketing services on multiple digital platforms to help you to reach your targeted customer.</p>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+<footer>
+<div class="content">
+<div class="row">
+<div class="footcol">
+<h1 style = "font-size:30px">
+Contact us at:</h1>
+
+<p style = "font-size:20px" >
+  <a href="mailto:anan@example.com">anan@example.com</a></p>
+</p>
+</div>
+
+<div class="footcol"  style="text-align:center;">
+<a href="https://www.facebook.com/omukk.official/"><img src="FB.png"></a>
+</div>
+
+<div class="footcolsp"  style="text-align:center;">
+<a href="https://www.linkedin.com/company/omukk/about/"><img src="insta.jpg"></a>
+</div>
+
+<div class="footcol"  style="text-align:center;">
+<a href="https://www.linkedin.com/company/omukk/about/"><img src="linkedin.png"></a>
+</div>
+
+</div>
+</footer>
+</body>
+</html>          
+   
