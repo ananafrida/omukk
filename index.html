@@ -7,17 +7,57 @@ body{
      font-family: Arial, sans-serif;
 }
 
-/* Create two equal columns that floats next to each other */
+
+.dropbtn {
+ margin-top:10px;
+  margin-right:60px;
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #A9A9A9;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #A9A9A9;}
+
+
 .columnim {
 margin:0px 0px 0px 50px;
   text-align:left;
   float: left;
   width: 25%;
   padding: 30px;
-  height: 250px; /* Should be removed. Only for demonstration */
+  height: 250px;
 }
 
-/* Clear floats after the columns */
+
 .rowim:after {
   content: "";
   display: table;
@@ -65,27 +105,26 @@ padding:50px;
   font-size: 15px;
 }
 
-/*for middle rowcol*/
+
 .midcontent {
   #margin: 0px 0px 0px 0px;
-  left:6px;
   position: absolute;
   top:150px;
   bottom: 0 px;
-  #background: rgb(128, 0, 0); /* Fallback color */
-  #background: rgba(128, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  #background: rgb(128, 0, 0); 
+  #background: rgba(128, 0, 0, 0.5);
   color: Black;
   width: 40%;
   padding: 6px;
 }
 
-/*for transparent part*/
+
 .content {
 <br><br><br>
   position: absolute;
   bottom: 0 px;
-  background: rgb(0, 0, 0); /* Fallback color */
-  #background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  background: rgb(0, 0, 0);
+  #background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
   width: 100%;
   padding: 0px;
@@ -104,6 +143,7 @@ padding:50px;
 }
 </style>
 </head>
+
  <body  background = "marketing.jpg">
 <div class="header">
 <div class="row">
@@ -111,28 +151,61 @@ padding:50px;
 <img src="meta2.jpg">
 </div>
 
-<div class="headcol" >
-<h4><button class="button">AAAAA</button><h4>
+
+<div class="dropdown">
+  <button class="dropbtn">AAAAA</button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
-<div class="headcol">
-<h4><button class="button">AAAAA</button><h4>
+
+
+<div class="dropdown">
+  <button class="dropbtn">AAAAA</button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
-<div class="headcol" >
-<h4><button class="button">AAAAA</button><h4>
+
+
+<div class="dropdown">
+  <button class="dropbtn">AAAAA</button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
-<div class="headcol">
-<h4><button class="button">AAAAA</button><h4>
+
+
+<div class="dropdown">
+  <button class="dropbtn">AAAAA</button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
-<div class="headcol">
-<h4><button class="button">AAAAA</button><h4>
+
+
+<div class="dropdown">
+  <button class="dropbtn">AAAAA</button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
 </div>
-<div class="headcol">
-<h4><button class="button">AAAAA</button><h4>
+
 </div>
 </div>
-</div>
-<br><br><br>
-<br><br><br><br><br><br>
+
+
+<br><br><br><br>
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
@@ -141,7 +214,7 @@ padding:50px;
 <div class="midcontent">
 <div class="row">
 <div class= "midcol">
-<h1 style = "font-size:40px">Ensuring Quality</h1>
+<h1 style = "font-size:35px">Ensuring Quality</h1>
 <p style = "font-size:25px">Omukk is a Bangladesh-based technology solution team dedicated to help startups and businesses to grow their impacts. Besides contact-based works Omukk has its own projects that are constantly tested and upgraded for better uses.</p>
 </div>
 </div>
@@ -163,6 +236,7 @@ padding:50px;
 </div>
 
 <br><br><br><br><br>
+<br><br><br>
 
 <footer>
 <div class="content">
@@ -180,7 +254,7 @@ Contact us at:</h1>
 <a href="https://www.facebook.com/omukk.official/"><img src="FB.png"></a>
 </div>
 
-<div class="footcolsp"  style="text-align:center;">
+<div class="footcolsp"  style="text-align:center;"><br>
 <a href="https://www.linkedin.com/company/omukk/about/"><img src="insta.jpg"></a>
 </div>
 
@@ -191,5 +265,4 @@ Contact us at:</h1>
 </div>
 </footer>
 </body>
-</html>          
-   
+</html> 
